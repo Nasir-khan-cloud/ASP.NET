@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Computer Shop Management";
+}
+
+<div class="jumbotron">
+    <h2 style="color:chocolate">Welcome to Computer Shop Management</h2>
+    <p>Manage all your sales and profit with this awesome online tool.</p>
+</div>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $.getScript("/Home/WarningMessage");
+        });
+    });
+</script>
+
+<button>Show Message</button>
+@Html.ActionLink("Download Text File", "Download", "Home")
+@{
+    Html.RenderAction("messagepage", "Home");
+}

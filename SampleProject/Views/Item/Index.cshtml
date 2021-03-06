@@ -1,0 +1,40 @@
+﻿<h1>@ViewBag.ItemList</h1>
+
+<h4 style="color:purple">
+    <b>ID:</b>    @ViewBag.id<br />
+    <b>Name:</b>  @ViewBag.Name <br />
+    <b>Category:</b> @ViewBag.category<br />
+    <b>Category:</b> @ViewBag.price
+</h4>
+<hr />
+<h3><b>Forms: Weakly Typed</b></h3>
+
+<form action="form1" method="post">
+    <table>
+        <tr>
+            <td>Enter ID: </td>
+            <td><input type="text" name="Id" /></td>
+        </tr>
+       
+
+        <tr>
+            <td>Enter Name: </td>
+            <td><input type="text" name="Name" /></td>
+        </tr>
+        
+        <tr>
+            <td>Category: </td>
+            <td><input type="text" name="category" /></td>
+        </tr>
+        
+        <tr>
+            <td>Price:</td>
+            <td> <input type="number" name="price" /></td>
+        </tr>
+        
+        <tr>
+            
+            <td colspan="2"> <input type="submit" value="Submit Form" /></td>
+        </tr>
+    </table>
+</form>
